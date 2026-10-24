@@ -1,0 +1,15 @@
+{
+  "name": "2_restaurant_page",
+  "version": "1.0.0",
+  "description": "just an app i am creating for fun",
+  "keywords": [
+    "p"
+  ],
+  "license": "ISC",
+  "author": "nihal",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
