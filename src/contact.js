@@ -1,4 +1,3 @@
-
 function loadContact() {
 
     const heading = document.createElement("h1");
@@ -13,7 +12,10 @@ function loadContact() {
     description.textContent = `Address: ${address}\nPhone: ${phone}\nOperating Hours: ${operatingHours}`;
 
     const content = document.querySelector("#content");
+    content.innerHTML = ""; // Clear existing content before appending new elements
     content.appendChild(heading);
     content.appendChild(description);
 
 }
+
+export { loadContact };
