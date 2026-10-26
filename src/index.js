@@ -17,7 +17,11 @@ console.log(buttons.length);
 
 buttons.forEach((button) => {
 
+    const content = document.querySelector("#content");
+
     button.addEventListener("click", (event) => {
+
+        content.innerHTML = "";
 
         console.log(event.target.id);
         

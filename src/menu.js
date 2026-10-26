@@ -50,7 +50,6 @@ function loadMenu() {
     })
 
     const content = document.querySelector("#content");
-    content.innerHTML = ""; // Clear existing content before appending new elements
     content.appendChild(heading);
     content.appendChild(menuItems);
 }

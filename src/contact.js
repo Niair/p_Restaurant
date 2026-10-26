@@ -21,7 +21,6 @@ function loadContact() {
     description.appendChild(hours);
 
     const content = document.querySelector("#content");
-    content.innerHTML = ""; // Clear existing content before appending new elements
     content.appendChild(heading);
     content.appendChild(description);
 
