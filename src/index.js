@@ -1,4 +1,6 @@
-import { loadHome, loadMenu, loadContact } from "./home.js";
+import { loadHome } from "./home.js";
+import { loadMenu } from "./menu.js";
+import { loadContact } from "./contact.js";
 
 console.log("it works");
 
@@ -9,20 +11,21 @@ console.log(x.appendChild(document.createElement("div")));
 
 loadHome();
 
-buttons = document.querySelectorAll("nav-btn");
+const buttons = document.querySelectorAll("nav-btn");
 
-buttons.addEventListener("click", (event) => {
+buttons.forEach((button) => {
 
-    if (event.target.id === "home") {
-        loadHome();
-    } else if (event.target.id === "menu") {
-        loadMenu();
-    } else if (event.target.id === "contact") {
-        loadContact();
-    } else {
-        console.log("Unknown button clicked");
-    }
-});
+    button.addEventListener("click", (event) => {
 
-loadMenu();
-loadContact();
+        if (event.target.id === "home") {
+            loadHome();
+        } else if (event.target.id === "menu") {
+            loadMenu();
+        } else if (event.target.id === "contact") {
+            loadContact();
+        } else {
+            console.log("Unknown button clicked");
+        }
+
+    });
+})
