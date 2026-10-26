@@ -3,7 +3,7 @@ function loadContact() {
     const heading = document.createElement("h1");
     heading.textContent = "CONTACT US";
 
-    const description = document.createElement("p");
+    const description = document.createElement("div");
 
     const address = "123 Main Street, Anytown, INDIA";
     const phone = "+91 123-456-7890";

@@ -11,17 +11,21 @@ console.log(x.appendChild(document.createElement("div")));
 
 loadHome();
 
-const buttons = document.querySelectorAll("nav-btn");
+const buttons = document.querySelectorAll(".nav-btn");
+
+console.log(buttons.length);
 
 buttons.forEach((button) => {
 
     button.addEventListener("click", (event) => {
 
-        if (event.target.id === "home") {
+        console.log(event.target.id);
+        
+        if (event.target.id === "homebutton") {
             loadHome();
-        } else if (event.target.id === "menu") {
+        } else if (event.target.id === "menubutton") {
             loadMenu();
-        } else if (event.target.id === "contact") {
+        } else if (event.target.id === "contactbutton") {
             loadContact();
         } else {
             console.log("Unknown button clicked");
