@@ -46,6 +46,8 @@ function loadMenu() {
         itemDescription.textContent = item.description;
         itemPrice.textContent = item.price;
 
+        itemContainer.classList.add("menu-item");
+
         itemContainer.appendChild(itemName);
         itemContainer.appendChild(itemDescription);
         itemContainer.appendChild(itemPrice);

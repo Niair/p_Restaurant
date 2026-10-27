@@ -3,7 +3,7 @@ import { loadMenu } from "./menu.js";
 import { loadContact } from "./contact.js";
 import "./style.css";
 
-console.log("it works");
+// console.log("it works");
 
 /*
 const x = document.querySelector("#thatid");
@@ -14,7 +14,7 @@ loadHome();
 
 const buttons = document.querySelectorAll(".nav-btn");
 
-console.log(buttons.length);
+// console.log(buttons.length);
 
 buttons.forEach((button) => {
 
@@ -24,7 +24,7 @@ buttons.forEach((button) => {
 
         content.innerHTML = "";
 
-        console.log(event.target.id);
+        // console.log(event.target.id);
         
         if (event.target.id === "homebutton") {
             loadHome();
