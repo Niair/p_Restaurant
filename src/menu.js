@@ -40,13 +40,17 @@ function loadMenu() {
         const itemDescription = document.createElement("p");
         const itemPrice = document.createElement("p");
 
+        const itemContainer = document.createElement("div");
+
         itemName.textContent = item.name;
         itemDescription.textContent = item.description;
         itemPrice.textContent = item.price;
 
-        menuItems.appendChild(itemName);
-        menuItems.appendChild(itemDescription);
-        menuItems.appendChild(itemPrice);
+        itemContainer.appendChild(itemName);
+        itemContainer.appendChild(itemDescription);
+        itemContainer.appendChild(itemPrice);
+
+        menuItems.appendChild(itemContainer);
     })
 
     const content = document.querySelector("#content");
