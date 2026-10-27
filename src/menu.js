@@ -33,6 +33,7 @@ function loadMenu() {
     heading.textContent = "MENU";
     
     const menuItems = document.createElement("div");
+    menuItems.classList.add("menu-items");
     
     items.forEach(item => {
 
