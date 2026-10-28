@@ -3,38 +3,38 @@ import { loadMenu } from "./menu.js";
 import { loadContact } from "./contact.js";
 import "./style.css";
 
-// console.log("it works");
-
-/*
-const x = document.querySelector("#thatid");
-console.log(x.appendChild(document.createElement("div")));
-*/
-
-loadHome();
-
 const buttons = document.querySelectorAll(".nav-btn");
+const content = document.querySelector("#content");
 
-// console.log(buttons.length);
+
+function showpage(button) {
+
+    content.innerHTML = "";
+
+    buttons.forEach((btn) => {
+        btn.classList.remove("active");
+    })
+
+    button.classList.add("active");
+
+    if (button.id === "homebutton") {
+        loadHome();
+    } else if (button.id === "menubutton") {
+        loadMenu();
+    } else if (button.id === "contactbutton") {
+        loadContact();
+    } else {
+        console.log("Unknown button clicked");
+    }
+}
+
+const homebtn = document.querySelector("#homebutton");
+loadHome(homebtn);
 
 buttons.forEach((button) => {
 
-    const content = document.querySelector("#content");
+    button.addEventListener("click", () => {
 
-    button.addEventListener("click", (event) => {
-
-        content.innerHTML = "";
-
-        // console.log(event.target.id);
-        
-        if (event.target.id === "homebutton") {
-            loadHome();
-        } else if (event.target.id === "menubutton") {
-            loadMenu();
-        } else if (event.target.id === "contactbutton") {
-            loadContact();
-        } else {
-            console.log("Unknown button clicked");
-        }
-
+        showpage(button);
     });
 })
