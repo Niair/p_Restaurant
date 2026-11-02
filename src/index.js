@@ -30,6 +30,7 @@ function showpage(button) {
 
 const homebtn = document.querySelector("#homebutton");
 loadHome(homebtn);
+homebtn.classList.add("active");
 
 buttons.forEach((button) => {
 

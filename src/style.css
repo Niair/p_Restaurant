@@ -48,7 +48,7 @@ body {
                 transform 0.1s ease;
 }
 
-button:hover {
+.nav-btn:hover {
     background-color: var(--amber);
     color: white;
     border-color: white;
@@ -94,7 +94,7 @@ button:hover {
     margin: 0;
 }
 
-.menu-list {
+.menu-lists {
     display: flex;
     flex-direction: column;
     gap: 16px;
