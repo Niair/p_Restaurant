@@ -6,6 +6,11 @@ import "./style.css";
 const buttons = document.querySelectorAll(".nav-btn");
 const content = document.querySelector("#content");
 
+const buttonDict = {
+    homebutton: loadHome,
+    menubutton: loadMenu,
+    contactbutton: loadContact
+}
 
 function showpage(button) {
 
@@ -17,14 +22,12 @@ function showpage(button) {
 
     button.classList.add("active");
 
-    if (button.id === "homebutton") {
-        loadHome();
-    } else if (button.id === "menubutton") {
-        loadMenu();
-    } else if (button.id === "contactbutton") {
-        loadContact();
+    if (buttonDict[button.id]) {
+        buttonDict[button.id]();
+    
     } else {
         console.log("Unknown button clicked");
+
     }
 }
 
