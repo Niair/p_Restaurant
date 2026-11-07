@@ -2,27 +2,27 @@ const items = [
     {
         name: "Spaghetti Carbonara",
         description: "Classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-        price: "Rs. 12.99"
+        price: 12.99
     },
     {
         name: "Margherita Pizza",
         description: "Traditional pizza topped with fresh tomatoes, mozzarella cheese, and basil.",
-        price: "Rs. 10.99"
+        price: 10.99
     },
     {
         name: "Caesar Salad",
         description: "Crisp romaine lettuce tossed with Caesar dressing, croutons, and Parmesan cheese.",
-        price: "Rs. 8.99"
+        price: 8.99
     },
     {
         name: "Grilled Salmon",
         description: "Fresh salmon fillet grilled to perfection and served with a lemon butter sauce.",
-        price: "Rs. 15.99"
+        price: 15.99
     },
     {
         name: "Chocolate Lava Cake",
         description: "Decadent chocolate cake with a gooey molten center, served with vanilla ice cream.",
-        price: "Rs. 6.99"
+        price: 6.99
     }
 ]
 
@@ -33,7 +33,7 @@ function loadMenu() {
     heading.textContent = "MENU";
     
     const menuItems = document.createElement("div");
-    menuItems.classList.add("menu-items");
+    menuItems.classList.add("menu-list");
     
     items.forEach(item => {
 

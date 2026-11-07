@@ -94,7 +94,7 @@ body {
     margin: 0;
 }
 
-.menu-lists {
+.menu-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -115,7 +115,6 @@ body {
 
     border-radius: 10px;
     border: 1px solid var(--amber);
-    margin: 16px;
     color: var(--brown);
     border-left: 4px solid var(--amber);
 

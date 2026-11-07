@@ -11,7 +11,7 @@
   "author": "nihal",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "css-loader": "^7.1.5",

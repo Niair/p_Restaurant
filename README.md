@@ -12,3 +12,11 @@ npm ls --depth=0
 #### run the surver code
 
 npx webpack serve --mode development
+
+#### npm deploynment
+
+npm run build
+
+#### Deploy with a gh-pages branch
+
+git subtree push
