@@ -20,3 +20,10 @@ npm run build
 #### Deploy with a gh-pages branch
 
 git subtree push
+git add .
+git status
+git commit -m "add built site for deployment"
+git subtree push --prefix dist origin gh-pages
+
+git rm -r --cached dist
+
