@@ -23,7 +23,7 @@ git subtree push
 git add .
 git status
 git commit -m "add built site for deployment"
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix dist origin gh-pages // main thing to deploy + package.json(scripts)
 
 git rm -r --cached dist
 

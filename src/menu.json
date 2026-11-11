@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Honey-Glazed Salmon",
+        "description": "Grilled salmon brushed with wildflower honey.",
+        "price": 349,
+        "category": "mains",
+        "available": true
+    },
+    {
+        "id": 2,
+        "name": "Spaghetti Carbonara",
+        "description": "Classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+        "price": 367,
+        "category": "mains",
+        "available": true
+    },
+    {
+        "id": 3,
+        "name": "Margherita Pizza",
+        "description": "Traditional pizza topped with fresh tomatoes, mozzarella cheese, and basil.",
+        "price": 430,
+        "category": "mains",
+        "available": true
+    },
+    {
+        "id": 4,
+        "name": "Caesar Salad",
+        "description": "Crisp romaine lettuce tossed with Caesar dressing, croutons, and Parmesan cheese.",
+        "price": 360,
+        "category": "mains",
+        "available": true
+    },
+    {
+        "id": 5,
+        "name": "Chocolate Lava Cake",
+        "description": "Decadent chocolate cake with a gooey molten center, served with vanilla ice cream.",
+        "price": 325,
+        "category": "mains",
+        "available": true
+    }
+]
