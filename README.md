@@ -27,3 +27,11 @@ git subtree push --prefix dist origin gh-pages // main thing to deploy + package
 
 git rm -r --cached dist
 
+# backend
+
+uv init
+uv add ----
+.venv\Scripts\activate
+uv run pyhton main.py
+
+pip freeze > requirements.txt
