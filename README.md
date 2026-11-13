@@ -43,3 +43,5 @@ git branch -D fastapi-backend  // delete a branch
 uv add --dev pytest httpx // add more package
 
 cd backend,  uv run python -m pytest -v  // to run test
+
+uv run uvicorn main:app --reload  // run backend
