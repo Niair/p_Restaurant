@@ -39,3 +39,7 @@ pip freeze > requirements.txt
 git checkout -b feature/fastapi-backend  // new Branch
 
 git branch -D fastapi-backend  // delete a branch
+
+uv add --dev pytest httpx // add more package
+
+cd backend,  uv run python -m pytest -v  // to run test
