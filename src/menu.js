@@ -1,4 +1,4 @@
-// import items from "./menu.json"
+import items from "./menu.json"
 
 function loadMenu() {
 
