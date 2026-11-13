@@ -46,7 +46,7 @@ def get_menu(category : str | None = None):
 
 # Get based on the specific dish
 
-@app.get("/menu/{dish_id}", response_model=list[Dish])
+@app.get("/menu/{dish_id}", response_model=Dish)
 def get_dish(dish_id : int):
 
     menu = load_menu()
