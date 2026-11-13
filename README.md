@@ -35,3 +35,7 @@ uv add ----
 uv run pyhton main.py
 
 pip freeze > requirements.txt
+
+git checkout -b feature/fastapi-backend  // new Branch
+
+git branch -D fastapi-backend  // delete a branch

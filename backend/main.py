@@ -6,7 +6,7 @@ from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
 
-class items(BaseModel):
+class Dish(BaseModel):
 
     id: int
     name: str
@@ -24,8 +24,8 @@ def load_menu():
 
     return menu
 
-@app.get("/menu/{dish_id}", response_model=list[items])
-def get_menu(dish_id, category : str | None = None):
+@app.get("/menu", response_model=list[Dish])
+def get_menu(category : str | None = None):
 
     menu = load_menu()
 
@@ -33,18 +33,21 @@ def get_menu(dish_id, category : str | None = None):
 
     for item in menu:
 
-        if item['id'] == dish_id and item['available']:
+        if not item['available']:
+            continue
 
-            if category and category != item['category']:
-                continue
+        if category and category != item['category']:
+            continue
 
         items_name.append(item)
 
     return items_name
 
-# Get 
-@app.get("/menu/{dish_id}")
-def get_dish(dish_id):
+
+# Get based on the specific dish
+
+@app.get("/menu/{dish_id}", response_model=list[Dish])
+def get_dish(dish_id : int):
 
     menu = load_menu()
 
