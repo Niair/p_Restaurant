@@ -1,5 +1,7 @@
 import json
+import sqlite3
 from pathlib import Path
+
 from pydantic import BaseModel
 
 from fastapi import FastAPI, HTTPException
@@ -7,6 +9,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+DB_PATH = Path(__file__).parent / "resturant.db"
 
 app.add_middleware(
     CORSMiddleware,
@@ -25,12 +29,7 @@ class Dish(BaseModel):
 
 def load_menu():
 
-    file_path = Path(__file__).parent / "menu.json"
-
-    with open(file_path, "r", encoding="utf-8") as file:
-        menu = json.load(file)
-
-    return menu
+    
 
 @app.get("/menu", response_model=list[Dish])
 def get_menu(category : str | None = None):

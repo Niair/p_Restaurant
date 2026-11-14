@@ -35,7 +35,7 @@ def seed_database():
     # Insert dishes into the table
 
     cursor.executemany("""
-    INSERT INTO dishes (id, name, description, price, category, available)
+    INSERT OR IGNORE INTO dishes (id, name, description, price, category, available)
     VALUES(?, ?, ?, ?, ?, ?)
     """, [(
             dish['id'],
