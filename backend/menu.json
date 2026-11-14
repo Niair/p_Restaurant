@@ -1,42 +1,162 @@
 [
-    {
-        "id": 1,
-        "name": "Honey-Glazed Salmon",
-        "description": "Grilled salmon brushed with wildflower honey.",
-        "price": 349,
-        "category": "mains",
-        "available": true
-    },
-    {
-        "id": 2,
-        "name": "Spaghetti Carbonara",
-        "description": "Classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-        "price": 367,
-        "category": "mains",
-        "available": true
-    },
-    {
-        "id": 3,
-        "name": "Margherita Pizza",
-        "description": "Traditional pizza topped with fresh tomatoes, mozzarella cheese, and basil.",
-        "price": 430,
-        "category": "mains",
-        "available": true
-    },
-    {
-        "id": 4,
-        "name": "Caesar Salad",
-        "description": "Crisp romaine lettuce tossed with Caesar dressing, croutons, and Parmesan cheese.",
-        "price": 360,
-        "category": "mains",
-        "available": true
-    },
-    {
-        "id": 5,
-        "name": "Chocolate Lava Cake",
-        "description": "Decadent chocolate cake with a gooey molten center, served with vanilla ice cream.",
-        "price": 325,
-        "category": "mains",
-        "available": true
-    }
+  {
+    "id": 6,
+    "name": "Classic Veg Burger",
+    "description": "Grilled vegetable patty with lettuce, tomato, and cheese.",
+    "price": 180,
+    "category": "burgers",
+    "available": true
+  },
+  {
+    "id": 7,
+    "name": "Chicken Burger",
+    "description": "Juicy grilled chicken patty with house sauce.",
+    "price": 240,
+    "category": "burgers",
+    "available": true
+  },
+  {
+    "id": 8,
+    "name": "Paneer Tikka Burger",
+    "description": "Spiced paneer patty with mint mayo and onions.",
+    "price": 210,
+    "category": "burgers",
+    "available": true
+  },
+  {
+    "id": 9,
+    "name": "French Fries",
+    "description": "Crispy golden potato fries seasoned with salt.",
+    "price": 110,
+    "category": "starters",
+    "available": true
+  },
+  {
+    "id": 10,
+    "name": "Garlic Bread",
+    "description": "Toasted bread with garlic butter and herbs.",
+    "price": 130,
+    "category": "starters",
+    "available": true
+  },
+  {
+    "id": 11,
+    "name": "Veg Spring Rolls",
+    "description": "Crispy rolls stuffed with mixed vegetables.",
+    "price": 160,
+    "category": "starters",
+    "available": true
+  },
+  {
+    "id": 12,
+    "name": "Farmhouse Pizza",
+    "description": "Pizza topped with capsicum, onion, tomato, and mushrooms.",
+    "price": 380,
+    "category": "pizza",
+    "available": true
+  },
+  {
+    "id": 13,
+    "name": "Pepperoni Pizza",
+    "description": "Classic pizza topped with pepperoni and mozzarella.",
+    "price": 450,
+    "category": "pizza",
+    "available": false
+  },
+  {
+    "id": 14,
+    "name": "Penne Alfredo",
+    "description": "Penne pasta tossed in a creamy white sauce.",
+    "price": 320,
+    "category": "pasta",
+    "available": true
+  },
+  {
+    "id": 15,
+    "name": "Arrabbiata Pasta",
+    "description": "Pasta tossed in a spicy tomato and garlic sauce.",
+    "price": 290,
+    "category": "pasta",
+    "available": true
+  },
+  {
+    "id": 16,
+    "name": "Veg Biryani",
+    "description": "Fragrant basmati rice cooked with vegetables and spices.",
+    "price": 260,
+    "category": "rice",
+    "available": true
+  },
+  {
+    "id": 17,
+    "name": "Chicken Biryani",
+    "description": "Aromatic basmati rice cooked with spiced chicken.",
+    "price": 340,
+    "category": "rice",
+    "available": true
+  },
+  {
+    "id": 18,
+    "name": "Chocolate Brownie",
+    "description": "Rich chocolate brownie served with chocolate sauce.",
+    "price": 150,
+    "category": "desserts",
+    "available": true
+  },
+  {
+    "id": 19,
+    "name": "Vanilla Ice Cream",
+    "description": "Classic vanilla ice cream with a creamy texture.",
+    "price": 90,
+    "category": "desserts",
+    "available": true
+  },
+  {
+    "id": 20,
+    "name": "Gulab Jamun",
+    "description": "Soft milk-solid dumplings soaked in sugar syrup.",
+    "price": 100,
+    "category": "desserts",
+    "available": false
+  },
+  {
+    "id": 21,
+    "name": "Cold Coffee",
+    "description": "Chilled coffee blended with milk and sugar.",
+    "price": 140,
+    "category": "beverages",
+    "available": true
+  },
+  {
+    "id": 22,
+    "name": "Fresh Lime Soda",
+    "description": "Refreshing lime soda served chilled.",
+    "price": 100,
+    "category": "beverages",
+    "available": true
+  },
+  {
+    "id": 23,
+    "name": "Mango Shake",
+    "description": "Thick mango milkshake made with fresh mangoes.",
+    "price": 160,
+    "category": "beverages",
+    "available": true
+  },
+  {
+    "id": 24,
+    "name": "Tomato Soup",
+    "description": "Warm tomato soup seasoned with herbs and pepper.",
+    "price": 120,
+    "category": "soups",
+    "available": true
+  },
+  {
+    "id": 25,
+    "name": "Hot and Sour Soup",
+    "description": "Spicy soup with vegetables and a tangy broth.",
+    "price": 140,
+    "category": "soups",
+    "available": true
+  }
 ]
